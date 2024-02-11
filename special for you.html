@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>special for you</title>
+<style>
+  body {
+background-color: pink;
+        text-align: center;
+  }
+  {
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  .message {
+    display: none;
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  #heart-rain {
+    display: none;
+    font-size: 50px;
+    color: red;
+    animation: heart-rain 1s linear infinite;
+  }
+  @keyframes heart-rain {
+    0% { transform: translateY(-100vh); }
+    100% { transform: translateY(100vh); }
+  }
+</style>
+</head>
+<body>
+<h1>Guten Morgen Tedo, I have an important question</h1>
+<p>Will you be my valentine?</p>
+<button onclick="showYes()">Yes</button>
+<button onclick="showNo()">No</button>
+<div id="yes-message" class="message">
+  <p>OOOSODOASIAOS PERFECTO PERFECTO I WILL WAIT YOU AT VALENTINES DAY
+shte qem kfc!!!!</p>
+  <p id="heart-rain">❤️</p>
+</div>
+<div id="no-message" class="message">
+  <p>SUKAAAA PIDARASINA TI</p>
+  <p>😢😢😢</p>
+</div>
+<script>
+  function showYes() {
+    document.getElementById("yes-message").style.display = "block";
+    document.getElementById("heart-rain").style.display = "block";
+    document.getElementById("no-message").style.display = "none";
+  }
+  function showNo() {
+    document.getElementById("yes-message").style.display = "none";
+    document.getElementById("heart-rain").style.display = "none";
+    document.getElementById("no-message").style.display = "block";
+  }
+</script>
+</body>
+</html>
